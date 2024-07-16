@@ -4,6 +4,9 @@ namespace BaseLibrary.Entities
 {
     public class Employee : BaseEntity // we make it public mean it can be accessed any where.
     {
+        public int Id { get; set; }
+
+        public string? Name { get; set; }
         public string? EmployeeId { get; set; }
         public string? FileNumber { get; set; }
         public string? FullName { get; set; }
@@ -15,7 +18,7 @@ namespace BaseLibrary.Entities
 
         //Relationship many to one
 
-        public GeneralDepartment? GeneralDepartment { get; set; }
+        public GeneralDepartment? GeneralDepartment { get; set; }  //There are the many to one relationship
         public int GeneralDepartmentId { get; set; }
 
         public Department? Department { get; set; }
