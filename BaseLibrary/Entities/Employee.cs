@@ -18,7 +18,7 @@ namespace BaseLibrary.Entities
 
         //Relationship many to one
 
-        public GeneralDepartment? GeneralDepartment { get; set; }  //There are the many to one relationship
+        public GeneralDepartment? GeneralDepartment { get; set; }  //There are the many to one relationship.
         public int GeneralDepartmentId { get; set; }
 
         public Department? Department { get; set; }
